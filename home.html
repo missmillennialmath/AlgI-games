@@ -4,7 +4,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Miss Millennial Math | Algebra I Arcade</title>
 
 <style>
@@ -21,52 +20,46 @@ body {
 
 header {
     text-align: center;
-    padding: 48px 20px 32px;
-    background: #ead0d7;
-    border-bottom: 1px solid #d7aebc;
+    padding: 45px 20px;
+    background: #e6c3ce;
 }
 
 h1 {
-    font-size: clamp(2rem, 5vw, 3.6rem);
+    font-size: clamp(2rem, 5vw, 3.5rem);
     margin: 10px 0;
-    letter-spacing: -0.04em;
 }
 
-header p {
-    margin: 8px auto;
-    max-width: 600px;
-}
-
-small {
-    font-weight: 800;
-    letter-spacing: 0.15em;
+header small {
     text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
 }
 
 main {
-    max-width: 1100px;
+    max-width: 1150px;
     margin: auto;
     padding: 30px 20px;
 }
 
-h2 {
-    margin: 0 0 20px;
-}
-
 .games {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
 }
 
 .game {
     background: white;
-    border: 1px solid #e4cbd3;
+    border: 2px solid #e6c3ce;
     border-radius: 20px;
-    padding: 24px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 5px 15px #5833470b;
+    box-shadow: 0 5px 15px #58334712;
+    transition: transform 0.2s;
+}
+
+.game:hover {
+    transform: translateY(-4px);
 }
 
 .emoji {
@@ -74,49 +67,35 @@ h2 {
 }
 
 .game h3 {
-    font-size: 1.4rem;
-    margin: 12px 0 6px;
+    font-size: 1.5rem;
+    margin: 12px 0 5px;
 }
 
 .game p {
-    line-height: 1.5;
     color: #65515b;
+    line-height: 1.6;
     flex: 1;
 }
 
 .play {
     display: block;
-    text-align: center;
-    background: #713e54;
+    background: #78465b;
     color: white;
+    text-align: center;
     text-decoration: none;
-    border-radius: 10px;
-    padding: 13px;
-    font-weight: 750;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: bold;
 }
 
 .play:hover {
     background: #502b3c;
 }
 
-.play:focus-visible {
-    outline: 3px solid #34252d;
-    outline-offset: 3px;
-}
-
 footer {
     text-align: center;
     padding: 30px;
     color: #65515b;
-}
-
-.soon {
-    background: #eee3e7;
-    color: #65515b;
-    text-align: center;
-    padding: 13px;
-    border-radius: 10px;
-    font-weight: 700;
 }
 </style>
 </head>
@@ -125,8 +104,8 @@ footer {
 
 <header>
     <small>Miss Millennial Math</small>
-    <h1>Algebra I Arcade</h1>
-    <p>Pick a game. Practice your math. Level up your skills!</p>
+    <h1>🎮 Algebra I Arcade</h1>
+    <p>Pick a game. Practice your math. Level up!</p>
 </header>
 
 <main>
@@ -135,95 +114,79 @@ footer {
 
 <div class="games">
 
-    <!-- X-Y BATTLESHIP -->
-
     <article class="game">
         <div class="emoji">🚢</div>
         <h3>X–Y Battleship</h3>
-        <p>Practice navigating the coordinate plane.</p>
-        <a class="play" href="x-ybattleship.html">
-            Play game →
+        <p>Navigate the coordinate plane and locate your targets.</p>
+        <a class="play"
+           href="https://missmillennialmath.github.io/AlgI-games/x-ybattleship.html"
+           target="_blank" rel="noopener">
+           Play game →
         </a>
     </article>
-
-    <!-- PIZZA PANIC -->
 
     <article class="game">
         <div class="emoji">🍕</div>
         <h3>Pizza Panic</h3>
-        <p>Put your algebra skills to work in a pizza-themed challenge.</p>
-        <a class="play" href="pizzapanic.html">
-            Play game →
+        <p>Put your algebra skills to work in a pizza-themed adventure.</p>
+        <a class="play"
+           href="https://missmillennialmath.github.io/AlgI-games/pizzapanic.html"
+           target="_blank" rel="noopener">
+           Play game →
         </a>
     </article>
-
-    <!-- POLYNOMIAL TOWER -->
 
     <article class="game">
         <div class="emoji">🦝</div>
         <h3>Polynomial Tower</h3>
-        <p>Practice polynomial skills with Carl the raccoon.</p>
-        <a class="play" href="polynomialtower.html">
-            Play game →
+        <p>Join Carl the raccoon and master your polynomial skills.</p>
+        <a class="play"
+           href="https://missmillennialmath.github.io/AlgI-games/polynomialtower.html"
+           target="_blank" rel="noopener">
+           Play game →
         </a>
     </article>
-
-    <!-- CURSED AND RETURNED -->
 
     <article class="game">
         <div class="emoji">👻</div>
         <h3>Cursed &amp; Returned</h3>
-        <p>Explore a haunted thrift store and tackle math challenges.</p>
-        <a class="play" href="cursed-and-returned.html">
-            Play game →
+        <p>Explore a haunted thrift store and solve mysterious math challenges.</p>
+        <a class="play"
+           href="https://missmillennialmath.github.io/AlgI-games/cursed-and-returned.html"
+           target="_blank" rel="noopener">
+           Play game →
         </a>
     </article>
-
-    <!-- TURKEY TARGETS -->
 
     <article class="game">
         <div class="emoji">🦃</div>
         <h3>Turkey Targets</h3>
-        <p>Take aim at your algebra practice.</p>
-        <a class="play" href="turkey-targets.html">
-            Play game →
+        <p>Take aim and put your algebra knowledge to the test.</p>
+        <a class="play"
+           href="https://missmillennialmath.github.io/AlgI-games/turkey-targets.html"
+           target="_blank" rel="noopener">
+           Play game →
         </a>
     </article>
-
-    <!-- SECTOR 13 -->
 
     <article class="game">
         <div class="emoji">🧪</div>
         <h3>SECTOR 13</h3>
-        <p>Master linear inequalities and contain the Anomalies.</p>
-        <div id="sector" class="soon">
-            Coming soon
-        </div>
+        <p>Master linear inequalities, contain the Anomalies, and uncover the mystery.</p>
+        <a class="play"
+           href="https://missmillennialmath.github.io/AlgI-games/sector13.html"
+           target="_blank" rel="noopener">
+           Play game →
+        </a>
     </article>
 
 </div>
+
 </main>
 
 <footer>
-    Miss Millennial Math · Practice makes progress.
+    Miss Millennial Math · Practice makes progress. ♡
 </footer>
-
-<script>
-fetch('sector13.html', {
-    method: 'HEAD',
-    cache: 'no-store'
-})
-.then(response => {
-    if (response.ok) {
-        const link = document.createElement('a');
-        link.href = 'sector13.html';
-        link.className = 'play';
-        link.textContent = 'Play game →';
-        document.getElementById('sector').replaceWith(link);
-    }
-})
-.catch(() => {});
-</script>
 
 </body>
 </html>
